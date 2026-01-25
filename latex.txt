@@ -1,0 +1,128 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+
+% Colors
+\definecolor{primary}{HTML}{2b2b2b}
+\definecolor{secondary}{HTML}{555555}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+\titleformat{\subsection}{\bfseries\color{primary}}{}{0em}{}
+\titlespacing{\subsection}{0pt}{5pt}{2pt}
+
+\setlist[itemize]{leftmargin=*, itemsep=3pt}
+
+% Header
+\newcommand{\header}[4]{
+\begin{center}
+{\Huge\bfseries\color{primary} #1}\\[-2pt]
+{\small #4}\\[6pt]
+\faPhone\ #2 \hspace{8pt} |
+\hspace{8pt} \faEnvelope\ \href{mailto:#3}{#3} \hspace{8pt} |
+\hspace{8pt} \faGithub\ \href{https://github.com/DrBig-Brain}{GitHub} \hspace{8pt} |
+\hspace{8pt} \faLinkedin\ \href{https://www.linkedin.com/in/abhinavmishra05/}{LinkedIn}
+\end{center}
+}
+
+\begin{document}
+
+\header{ABHINAV MISHRA}{+91-7807952061}{abhinav714b@gmail.com}{Machine Learning Engineer / Intern}
+
+\vspace{6pt}
+
+\begin{center}
+\begin{minipage}{0.95\textwidth}
+\small
+Machine Learning and Data Science student with hands-on experience building end-to-end ML pipelines, deploying real-time AI systems, and tracking model performance. Demonstrated ability to deliver measurable results across computer vision, NLP, and MLOps projects.
+\end{minipage}
+\end{center}
+
+% Education
+\section*{Education}
+
+\subsection*{National Institute of Technology, Hamirpur}
+\textbf{B.Tech – Electronics and Communication Engineering} \hfill \textit{2024–2028}
+
+\subsection*{The Scholars' Home, Paonta Sahib}
+\textbf{Higher Secondary Certificate} \hfill \textit{2021–2023}
+
+% Projects
+\section*{Projects}
+
+\subsection*{Brain Tumour Detection \& Classification | PyTorch, CNN, Transfer Learning}
+\begin{itemize}
+\item Increased MRI tumour classification accuracy to \textbf{96\%} by fine-tuning ResNet and VGG16 models.
+\item Improved model generalization by applying normalization and augmentation across \textbf{thousands of MRI scans}.
+\item Reduced training time by \textbf{30\%} using learning rate scheduling and early stopping.
+\end{itemize}
+
+\subsection*{Email Spam Classifier | PyTorch, NLP, RNN/LSTM}
+\begin{itemize}
+\item Built an LSTM-based spam detection system achieving \textbf{92\% test accuracy}.
+\item Enhanced classification performance through optimized tokenization, padding, and TF-IDF feature extraction.
+\item Improved model robustness using dropout regularization and mini-batch training.
+\end{itemize}
+
+\subsection*{Live Facial Emotion Detection | OpenCV, CNN, Streamlit}
+\begin{itemize}
+\item Developed a real-time emotion recognition system supporting \textbf{7 facial emotion classes}.
+\item Trained CNN models on \textbf{15,000+ images} from RAF-DB, achieving \textbf{80\%+ validation accuracy}.
+\item Deployed a Streamlit web application enabling low-latency webcam inference.
+\end{itemize}
+
+\subsection*{InSPECt – Video Chat Assistant Chrome Extension | FastAPI, Gemini AI, Bootstrap}
+\begin{itemize}
+\item Launched an AI-powered Chrome extension enabling real-time Q\&A on video content.
+\item Implemented a WebSocket-based FastAPI backend for multi-turn, timestamp-aware conversations.
+\item Integrated \textbf{8 Gemini model variants} with automated fallback handling to improve reliability.
+\item Built a responsive Bootstrap UI with persistent chat history and real-time connection status.
+\end{itemize}
+
+% Skills
+\section*{Technical Skills}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Programming:} & Python, C++, JavaScript \\
+\textbf{Machine Learning:} & Scikit-learn, Regression, Classification, Feature Engineering \\
+\textbf{Deep Learning:} & PyTorch, TensorFlow, CNNs, RNN/LSTM, Transfer Learning, Hugging Face \\
+\textbf{MLOps:} & MLflow, Evidently, Experiment Tracking, Model Monitoring \\
+\textbf{Cloud (AWS):} & S3, EC2, RDS, Kinesis, Lambda \\
+\textbf{Data Science:} & Pandas, NumPy, Matplotlib, EDA, Data Cleaning \\
+\textbf{Testing:} & Pytest \\
+\textbf{Tools \& Platforms:} & Git, Docker, Linux, Jupyter, Google Colab, VS Code, Grafana \\
+\textbf{Backend:} & FastAPI, Flask \\
+\textbf{Frontend:} & HTML, CSS, Bootstrap, React \\
+\end{tabular}
+
+% Experience
+\section*{Experience}
+
+\subsection*{Team Vibhav (ECE Technical Club) — Volunteer | 2025}
+\begin{itemize}
+\item Delivered technical workshops for \textbf{100+ students}, improving hands-on learning outcomes.
+\item Supported peer project development, accelerating project completion and technical quality.
+\end{itemize}
+
+\subsection*{SPEC (Society for Promotion of Electronics Culture) — Executive Member | 2025–Present}
+\begin{itemize}
+\item Led planning and execution of technical events for \textbf{200+ participants}.
+\item Mentored junior students on ML concepts and project execution, accelerating learning readiness.
+\end{itemize}
+
+% Summary
+\section*{Summary}
+
+ML-focused engineering student with proven ability to deliver measurable results through deep learning, MLOps, and real-time AI systems. Actively involved in mentoring, technical events, and collaborative development.
+
+\end{document}
