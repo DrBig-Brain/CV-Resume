@@ -1,37 +1,45 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.65in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
-\usepackage{array}
-\usepackage{parskip}
 \usepackage{xcolor}
 \usepackage{titlesec}
 \usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{parskip}
 
 % Colors
 \definecolor{primary}{HTML}{2b2b2b}
 \definecolor{secondary}{HTML}{555555}
 
+% Hyperlink setup
+\hypersetup{
+  colorlinks=true,
+  urlcolor=secondary,
+  linkcolor=secondary
+}
+
 % Section formatting
 \titleformat{\section}{\large\bfseries\color{primary}}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{5pt}
+\titlespacing{\section}{0pt}{8pt}{5pt}
 
 \titleformat{\subsection}{\bfseries\color{primary}}{}{0em}{}
-\titlespacing{\subsection}{0pt}{5pt}{2pt}
+\titlespacing{\subsection}{0pt}{4pt}{2pt}
 
-\setlist[itemize]{leftmargin=*, itemsep=3pt}
+% List formatting
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt, parsep=0pt}
 
-% Header
+% Header command
 \newcommand{\header}[4]{
 \begin{center}
-{\Huge\bfseries\color{primary} #1}\\[-2pt]
-{\small #4}\\[6pt]
-\faPhone\ #2 \hspace{8pt} |
-\hspace{8pt} \faEnvelope\ \href{mailto:#3}{#3} \hspace{8pt} |
-\hspace{8pt} \faGithub\ \href{https://github.com/DrBig-Brain}{GitHub} \hspace{8pt} |
-\hspace{8pt} \faLinkedin\ \href{https://www.linkedin.com/in/abhinavmishra05/}{LinkedIn}
+{\LARGE\bfseries\color{primary} #1}\\[-2pt]
+{\small #4}\\[5pt]
+\faPhone\ #2 \hspace{10pt} |
+\hspace{10pt} \faEnvelope\ \href{mailto:#3}{#3} \hspace{10pt} |
+\hspace{10pt} \faGithub\ \href{https://github.com/DrBig-Brain}{GitHub} \hspace{10pt} |
+\hspace{10pt} \faLinkedin\ \href{https://www.linkedin.com/in/abhinavmishra05/}{LinkedIn}
 \end{center}
 }
 
@@ -39,60 +47,75 @@
 
 \header{ABHINAV MISHRA}{+91-7807952061}{abhinav714b@gmail.com}{Machine Learning Engineer / Intern}
 
-\vspace{6pt}
-
+\vspace{-2pt}
 \begin{center}
-\begin{minipage}{0.95\textwidth}
+\begin{minipage}{0.98\textwidth}
 \small
-Machine Learning and Data Science student with hands-on experience building end-to-end ML pipelines, deploying real-time AI systems, and tracking model performance. Demonstrated ability to deliver measurable results across computer vision, NLP, and MLOps projects.
+Machine Learning and Data Science student with hands-on experience building end-to-end ML pipelines, deploying real-time AI systems, and tracking model performance. Strong foundation in computer vision, NLP, and practical MLOps workflows.
 \end{minipage}
 \end{center}
 
+\vspace{-4pt}
+
+% ===========================
 % Education
+% ===========================
 \section*{Education}
+\textbf{National Institute of Technology, Hamirpur} \hfill \textit{2024--2028}\\
+B.Tech -- Electronics and Communication Engineering
 
-\subsection*{National Institute of Technology, Hamirpur}
-\textbf{B.Tech – Electronics and Communication Engineering} \hfill \textit{2024–2028}
+\textbf{The Scholars' Home, Paonta Sahib} \hfill \textit{2021--2023}\\
+Higher Secondary Certificate
 
-\subsection*{The Scholars' Home, Paonta Sahib}
-\textbf{Higher Secondary Certificate} \hfill \textit{2021–2023}
+\vspace{-4pt}
 
+% ===========================
 % Projects
+% ===========================
 \section*{Projects}
 
-\subsection*{Brain Tumour Detection \& Classification | PyTorch, CNN, Transfer Learning}
+\textbf{Brain Tumour Detection \& Classification} \hfill \textit{PyTorch, CNN, Transfer Learning}\\
 \begin{itemize}
-\item Increased MRI tumour classification accuracy to \textbf{96\%} by fine-tuning ResNet and VGG16 models.
-\item Improved model generalization by applying normalization and augmentation across \textbf{thousands of MRI scans}.
+\item Improved MRI tumour classification performance to \textbf{96\% accuracy} using fine-tuned ResNet and VGG16.
+\item Increased generalization with normalization + augmentation on \textbf{thousands of MRI scans}.
 \item Reduced training time by \textbf{30\%} using learning rate scheduling and early stopping.
 \end{itemize}
 
-\subsection*{Email Spam Classifier | PyTorch, NLP, RNN/LSTM}
+\vspace{-3pt}
+
+\textbf{Email Spam Classifier} \hfill \textit{NLP, LSTM/RNN, PyTorch}\\
 \begin{itemize}
-\item Built an LSTM-based spam detection system achieving \textbf{92\% test accuracy}.
-\item Enhanced classification performance through optimized tokenization, padding, and TF-IDF feature extraction.
-\item Improved model robustness using dropout regularization and mini-batch training.
+\item Built an LSTM-based spam detection pipeline achieving \textbf{92\% test accuracy}.
+\item Improved classification stability via optimized tokenization, padding, and dropout regularization.
 \end{itemize}
 
-\subsection*{Live Facial Emotion Detection | OpenCV, CNN, Streamlit}
+\vspace{-3pt}
+
+\textbf{Live Facial Emotion Detection} \hfill \textit{OpenCV, CNN, Streamlit}\\
 \begin{itemize}
-\item Developed a real-time emotion recognition system supporting \textbf{7 facial emotion classes}.
-\item Trained CNN models on \textbf{15,000+ images} from RAF-DB, achieving \textbf{80\%+ validation accuracy}.
-\item Deployed a Streamlit web application enabling low-latency webcam inference.
+\item Developed real-time webcam emotion recognition supporting \textbf{7 facial emotion classes}.
+\item Trained CNN on \textbf{15,000+ RAF-DB images}, achieving \textbf{80\%+ validation accuracy}.
+\item Deployed a Streamlit inference app for low-latency on-device predictions.
 \end{itemize}
 
-\subsection*{InSPECt – Video Chat Assistant Chrome Extension | FastAPI, Gemini AI, Bootstrap}
+\vspace{-3pt}
+
+\textbf{InSPECt -- Video Chat Assistant Chrome Extension} \hfill \textit{FastAPI, WebSockets, Gemini, Bootstrap}\\
 \begin{itemize}
-\item Launched an AI-powered Chrome extension enabling real-time Q\&A on video content.
-\item Implemented a WebSocket-based FastAPI backend for multi-turn, timestamp-aware conversations.
-\item Integrated \textbf{8 Gemini model variants} with automated fallback handling to improve reliability.
-\item Built a responsive Bootstrap UI with persistent chat history and real-time connection status.
+\item Built an AI Chrome extension enabling real-time Q\&A over video content with timestamp awareness.
+\item Implemented a WebSocket-based FastAPI backend for multi-turn conversations and connection stability.
+\item Integrated \textbf{8 Gemini model variants} with automated fallback routing to improve reliability.
+\item Designed a responsive Bootstrap UI with persistent chat history and real-time connection status.
 \end{itemize}
 
-% Skills
+\vspace{-5pt}
+
+% ===========================
+% Technical Skills
+% ===========================
 \section*{Technical Skills}
-
-\begin{tabular}{@{}ll@{}}
+\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
 \textbf{Programming:} & Python, C++, JavaScript \\
 \textbf{Machine Learning:} & Scikit-learn, Regression, Classification, Feature Engineering \\
 \textbf{Deep Learning:} & PyTorch, TensorFlow, CNNs, RNN/LSTM, Transfer Learning, Hugging Face \\
@@ -103,26 +126,30 @@ Machine Learning and Data Science student with hands-on experience building end-
 \textbf{Tools \& Platforms:} & Git, Docker, Linux, Jupyter, Google Colab, VS Code, Grafana \\
 \textbf{Backend:} & FastAPI, Flask \\
 \textbf{Frontend:} & HTML, CSS, Bootstrap, React \\
-\end{tabular}
+\end{tabularx}
 
-% Experience
-\section*{Experience}
+\vspace{-5pt}
 
-\subsection*{Team Vibhav (ECE Technical Club) — Volunteer | 2025}
+% ===========================
+% Experience & Leadership
+% ===========================
+\section*{Experience \& Leadership}
+
+\textbf{SPEC (Society for Promotion of Electronics Culture)} --- Executive Member \hfill \textit{2025--Present}\\
 \begin{itemize}
-\item Delivered technical workshops for \textbf{100+ students}, improving hands-on learning outcomes.
-\item Supported peer project development, accelerating project completion and technical quality.
+\item Led planning and execution of technical events for \textbf{200+ participants}, ensuring smooth operations.
+\item Mentored juniors on ML fundamentals and project execution, improving team readiness for competitions.
 \end{itemize}
 
-\subsection*{SPEC (Society for Promotion of Electronics Culture) — Executive Member | 2025–Present}
+\vspace{-2pt}
+
+\textbf{Team Vibhav (ECE Technical Club)} --- Volunteer \hfill \textit{2025}\\
 \begin{itemize}
-\item Led planning and execution of technical events for \textbf{200+ participants}.
-\item Mentored junior students on ML concepts and project execution, accelerating learning readiness.
+\item Conducted and supported technical workshops for \textbf{100+ students}, improving hands-on learning outcomes.
+\item Assisted peer project development, speeding up completion and improving overall technical quality.
 \end{itemize}
 
-% Summary
-\section*{Summary}
+\vspace{-4pt}
 
-ML-focused engineering student with proven ability to deliver measurable results through deep learning, MLOps, and real-time AI systems. Actively involved in mentoring, technical events, and collaborative development.
 
 \end{document}
