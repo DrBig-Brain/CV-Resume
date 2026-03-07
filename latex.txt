@@ -1,7 +1,7 @@
 \documentclass[10pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.65in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
@@ -13,102 +13,98 @@
     urlcolor=black
 }
 
-% Section formatting (ATS-safe)
+% Section formatting
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{8pt}{4pt}
+\titlespacing{\section}{0pt}{6pt}{3pt}
 
 % List formatting
-\setlist[itemize]{leftmargin=*, itemsep=2pt}
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=1pt}
 
 \begin{document}
 
 % ===========================
-% Header (ATS SAFE)
+% Header
 % ===========================
 \begin{center}
-{\LARGE \textbf{Abhinav Mishra}} \\[4pt]
-Machine Learning Engineer / Intern \\[6pt]
+{\LARGE \textbf{Abhinav Mishra}} \\[3pt]
+Machine Learning Engineer \\[5pt]
 Phone: +91-7807952061 \quad
-Email: \href{mailto:abhinav714b@gmail.com}{abhinav714b@gmail.com} \\[4pt]
+Email: \href{mailto:abhinav714b@gmail.com}{abhinav714b@gmail.com} \\[3pt]
 GitHub: \href{https://github.com/DrBig-Brain}{github.com/DrBig-Brain} \quad
 LinkedIn: \href{https://www.linkedin.com/in/abhinavmishra05/}{linkedin.com/in/abhinavmishra05}
 \end{center}
 
 % ===========================
-% Summary
+% Skills
 % ===========================
-\section*{Summary}
-Machine Learning and Data Science student with experience building end-to-end ML pipelines, training deep learning models, and deploying real-time AI systems. Strong foundation in computer vision, NLP, and MLOps with a focus on practical, measurable results.
+\section*{Skills}
 
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+Languages & Python, C++, JavaScript \\
+ML / AI & Scikit-learn, PyTorch, TensorFlow, Hugging Face \\
+Data & Pandas, NumPy, SQL, PySpark \\
+Backend & FastAPI, Flask, Nodejs, Expressjs \\
+Frontend & React, TailwindCSS, Redux \\
+Cloud \& MLOps & AWS, MLflow, Docker, Kubernetes \\
+Tools & Git, Linux, Grafana, Jupyter, VS Code \\
+\end{tabularx}
 % ===========================
-% Education
+% Experience
 % ===========================
-\section*{Education}
-\textbf{National Institute of Technology, Hamirpur} \hfill 2024 -- 2028 \\
-B.Tech in Electronics and Communication Engineering
+\section*{Experience}
 
-\textbf{The Scholars' Home, Paonta Sahib} \hfill 2021 -- 2023 \\
-Higher Secondary Certificate
+\textbf{SPEC – Society for Promotion of Electronics Culture} \hfill 2025 -- Present \\
+Executive Member
+\begin{itemize}
+\item Led planning and execution of technical events attended by 200+ participants, increasing engagement across ECE domains.
+\item Mentored 15+ junior students on machine learning fundamentals and guided project development.
+\end{itemize}
+
+\textbf{Team Vibhav – ECE Technical Club} \hfill 2025 \\
+Volunteer
+\begin{itemize}
+\item Conducted hands-on technical workshops for 100+ students covering electronics and applied ML concepts.
+\item Assisted in debugging and reviewing 10+ student projects involving embedded systems and AI pipelines.
+\end{itemize}
 
 % ===========================
 % Projects
 % ===========================
 \section*{Projects}
 
-\textbf{Brain Tumour Detection and Classification} \\
-Technologies: PyTorch, CNN, Transfer Learning
+\textbf{Brain Tumour Detection and Classification}
 \begin{itemize}
-\item Achieved 96\% MRI tumour classification accuracy using fine-tuned ResNet and VGG16 models.
-\item Improved generalization through data normalization and augmentation on thousands of MRI scans.
-\item Reduced training time by 30\% using early stopping and learning rate scheduling.
+\item Achieved \textbf{96\% accuracy} on MRI tumour classification using fine-tuned ResNet50 and VGG16 models.
+\item Trained on \textbf{5,000+ MRI images} and improved validation F1-score by \textbf{14\%} with augmentation pipelines.
 \end{itemize}
 
-\textbf{InSPECt – Video Chat Assistant Chrome Extension} \\
-Technologies: FastAPI, WebSockets, Gemini API, Bootstrap
+\textbf{InSPECt – AI Video Chat Assistant (Chrome Extension)}
 \begin{itemize}
-\item Developed an AI-powered Chrome extension for real-time question answering over video content.
-\item Implemented a WebSocket-based backend enabling multi-turn, timestamp-aware conversations.
-\item Integrated multiple Gemini model variants with automated fallback handling for reliability.
+\item Built a Chrome extension enabling real-time Q\&A over video content with \textbf{sub-500 ms latency}.
+\item Designed a FastAPI + WebSocket backend supporting \textbf{100+ concurrent users}.
+\end{itemize}
+
+\textbf{Live Emotion Detection System}
+\begin{itemize}
+\item Built a facial emotion recognition system achieving \textbf{92\% accuracy} across 7 emotion classes.
+\item Processed live webcam streams at \textbf{20+ FPS} using optimized CNN inference pipelines.
+\end{itemize}
+
+\textbf{Email Spam Classification System}
+\begin{itemize}
+\item Achieved \textbf{98\% accuracy} and \textbf{0.97 ROC-AUC} on the Enron email dataset.
+\item Reduced false positives by \textbf{22\%} using TF-IDF feature engineering and hyperparameter tuning.
 \end{itemize}
 
 % ===========================
-% Technical Skills
+% Education
 % ===========================
-\section*{Technical Skills}
+\section*{Education}
 
-\begin{tabularx}{\textwidth}{@{}lX@{}}
-Programming Languages & Python, C++, JavaScript \\
-Machine Learning & Scikit-learn, Regression, Classification, Feature Engineering \\
-Deep Learning & PyTorch, TensorFlow, CNNs, RNN/LSTM, Transfer Learning, Hugging Face \\
-Big Data & PySpark, Hadoop \\
-Databases & SQL \\
-MLOps & MLflow, Evidently, Experiment Tracking, Model Monitoring \\
-Cloud Platforms & AWS (S3, EC2, RDS, Lambda, Kinesis) \\
-Data Science & Pandas, NumPy, Matplotlib, EDA, Data Cleaning \\
-DevOps \& Containers & Docker, Kubernetes \\
-Tools & Git, Linux, Jupyter, Google Colab, VS Code, Grafana \\
-Backend & FastAPI, Flask \\
-Frontend & HTML, CSS, Bootstrap, React \\
-\end{tabularx}
+\textbf{National Institute of Technology, Hamirpur} \hfill 2024 -- 2028 \\
+B.Tech in Electronics and Communication Engineering
 
-
-% ===========================
-% Experience & Leadership
-% ===========================
-\section*{Experience and Leadership}
-
-\textbf{SPEC – Society for Promotion of Electronics Culture} \hfill 2025 -- Present \\
-Executive Member
-\begin{itemize}
-\item Led planning and execution of technical events for over 200 participants.
-\item Mentored junior students on machine learning concepts and project execution.
-\end{itemize}
-
-\textbf{Team Vibhav – ECE Technical Club} \hfill 2025 \\
-Volunteer
-\begin{itemize}
-\item Conducted technical workshops for over 100 students.
-\item Supported peer project development and hands-on learning initiatives.
-\end{itemize}
+\textbf{The Scholars' Home, Paonta Sahib} \hfill 2021 -- 2023 \\
+Higher Secondary Certificate
 
 \end{document}
