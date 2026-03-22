@@ -25,7 +25,7 @@
 % ===========================
 \begin{center}
 {\LARGE \textbf{Abhinav Mishra}} \\[3pt]
-Machine Learning Engineer \\[5pt]
+Software Development Engineer \\[5pt]
 +91-7807952061 \quad
 \href{mailto:abhinav714b@gmail.com}{abhinav714b@gmail.com} \quad
 \href{https://github.com/DrBig-Brain}{github.com/DrBig-Brain} \quad
