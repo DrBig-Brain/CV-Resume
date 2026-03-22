@@ -1,24 +1,22 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[utf8]{inputenc}
 \usepackage[margin=0.65in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{tabularx}
 \usepackage{parskip}
+\usepackage{graphicx}
 
 \hypersetup{
     colorlinks=true,
     urlcolor=black
 }
 
-% Section formatting
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{6pt}{3pt}
 
-% List formatting
-\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=1pt}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
 
 \begin{document}
 
@@ -28,10 +26,10 @@
 \begin{center}
 {\LARGE \textbf{Abhinav Mishra}} \\[3pt]
 Machine Learning Engineer \\[5pt]
-Phone: +91-7807952061 \quad
-Email: \href{mailto:abhinav714b@gmail.com}{abhinav714b@gmail.com} \\[3pt]
-GitHub: \href{https://github.com/DrBig-Brain}{github.com/DrBig-Brain} \quad
-LinkedIn: \href{https://www.linkedin.com/in/abhinavmishra05/}{linkedin.com/in/abhinavmishra05}
++91-7807952061 \quad
+\href{mailto:abhinav714b@gmail.com}{abhinav714b@gmail.com} \quad
+\href{https://github.com/DrBig-Brain}{github.com/DrBig-Brain} \quad
+\href{https://www.linkedin.com/in/abhinavmishra05/}{linkedin.com/in/abhinavmishra05}
 \end{center}
 
 % ===========================
@@ -41,30 +39,30 @@ LinkedIn: \href{https://www.linkedin.com/in/abhinavmishra05/}{linkedin.com/in/ab
 
 \begin{tabularx}{\textwidth}{@{}lX@{}}
 Languages & Python, C++, JavaScript \\
-ML / AI & Scikit-learn, PyTorch, TensorFlow, Hugging Face \\
+ML / AI & Scikit-learn, PyTorch, TensorFlow, Hugging Face, LangGraph \\
 Data & Pandas, NumPy, SQL, PySpark \\
-Backend & FastAPI, Flask, Nodejs, Expressjs \\
+Backend & FastAPI, Flask, Node.js, Express.js \\
 Frontend & React, TailwindCSS, Redux \\
-Cloud \& MLOps & AWS, MLflow, Docker, Kubernetes \\
-Tools & Git, Linux, Grafana, Jupyter, VS Code \\
+Cloud \& MLOps & AWS, Docker, Kubernetes, MLflow \\
 \end{tabularx}
+
 % ===========================
 % Experience
 % ===========================
 \section*{Experience}
 
 \textbf{SPEC – Society for Promotion of Electronics Culture} \hfill 2025 -- Present \\
-Executive Member
+\textit{Executive Member}
 \begin{itemize}
-\item Led planning and execution of technical events attended by 200+ participants, increasing engagement across ECE domains.
-\item Mentored 15+ junior students on machine learning fundamentals and guided project development.
+\item Led end-to-end execution of \textbf{National level Hackathon} with over 600 on venue participants.
+\item Mentored \textbf{25+ students} in machine learning and guided project development from ideation to deployment.
 \end{itemize}
 
 \textbf{Team Vibhav – ECE Technical Club} \hfill 2025 \\
-Volunteer
+\textit{Volunteer}
 \begin{itemize}
-\item Conducted hands-on technical workshops for 100+ students covering electronics and applied ML concepts.
-\item Assisted in debugging and reviewing 10+ student projects involving embedded systems and AI pipelines.
+\item Delivered hands-on workshops on embedded systems and applied ML to \textbf{100+ students}.
+\item Debugged and reviewed \textbf{10+ projects}, improving system reliability and model performance.
 \end{itemize}
 
 % ===========================
@@ -74,26 +72,27 @@ Volunteer
 
 \textbf{Brain Tumour Detection and Classification}
 \begin{itemize}
-\item Achieved \textbf{96\% accuracy} on MRI tumour classification using fine-tuned ResNet50 and VGG16 models.
-\item Trained on \textbf{5,000+ MRI images} and improved validation F1-score by \textbf{14\%} with augmentation pipelines.
+\item Built CNN-based models (ResNet50, VGG16) achieving \textbf{96\% accuracy} on MRI classification.
+\item Improved F1-score by \textbf{14\%} using data augmentation on \textbf{5,000+ images}.
 \end{itemize}
 
-\textbf{InSPECt – AI Video Chat Assistant (Chrome Extension)}
+\textbf{InSPECt – AI Video Chat Assistant}
 \begin{itemize}
-\item Built a Chrome extension enabling real-time Q\&A over video content with \textbf{sub-500 ms latency}.
-\item Designed a FastAPI + WebSocket backend supporting \textbf{100+ concurrent users}.
+\item Developed Chrome extension enabling real-time Q\&A over video with \textbf{sub-500ms latency}.
+\item Designed FastAPI + WebSocket backend supporting \textbf{100+ concurrent users}.
+\item Integrated LLM workflows using \textbf{LangGraph} for contextual query handling.
 \end{itemize}
 
 \textbf{Live Emotion Detection System}
 \begin{itemize}
-\item Built a facial emotion recognition system achieving \textbf{92\% accuracy} across 7 emotion classes.
-\item Processed live webcam streams at \textbf{20+ FPS} using optimized CNN inference pipelines.
+\item Built real-time emotion recognition system with \textbf{92\% accuracy} across 7 classes.
+\item Optimized inference pipeline to achieve \textbf{20+ FPS} on live webcam streams.
 \end{itemize}
 
-\textbf{Email Spam Classification System}
+\textbf{Email Spam Classification}
 \begin{itemize}
-\item Achieved \textbf{98\% accuracy} and \textbf{0.97 ROC-AUC} on the Enron email dataset.
-\item Reduced false positives by \textbf{22\%} using TF-IDF feature engineering and hyperparameter tuning.
+\item Achieved \textbf{98\% accuracy} and \textbf{0.97 ROC-AUC} on Enron dataset.
+\item Reduced false positives by \textbf{22\%} using TF-IDF and hyperparameter tuning.
 \end{itemize}
 
 % ===========================
